@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: #323238;
+  --icons-color: #323238;
+  --bg-cards-icons: #02799D;
+  --bg-cards: #E1E1E6;
+  font-size: 62.5%;
+}
+
+.selected {
+  background-color: var(--bg-cards-icons);
+}
+
+.selected path {
+  fill: var(--bg-cards);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  margin: 0 23rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  gap: 19rem;
+}
+
+main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 32.1rem;
+  height: 21.3rem;
+  left: 23.3rem;
+  top: 25.4rem;
+  gap: 1.7rem;
+}
+
+#timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4.8rem;
+}
+
+#timer span {
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #323238;
+}
+
+#controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#controls button:hover path {
+  fill: var(--bg-cards-icons);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+footer #sounds {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+footer button {
+  background-color: var(--bg-cards);
+  border-radius: 2.4rem;
+  width: 13.8rem;
+  height: 15.2rem;
+}
+
+footer button:hover {
+  background-color: var(--bg-cards-icons);
+}
+
+footer button:hover path {
+  fill: var(--bg-cards);
+}
+/*# sourceMappingURL=style.css.map */
