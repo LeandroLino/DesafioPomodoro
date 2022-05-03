@@ -99,4 +99,8 @@ export default function ({ timer, sound }) {
   buttonFirePlace.addEventListener('click', function () {
     PlayFire()
   })
+
+  buttonCoffeeShop.addEventListener('click', function () {
+    PlayCoffe()
+  })
 }
